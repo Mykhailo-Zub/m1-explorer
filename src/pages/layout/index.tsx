@@ -8,8 +8,8 @@ import {
   GlobalStateProvider,
   useGlobalState,
 } from "../../global-config/GlobalConfig";
-import {ProvideColorMode} from "../../context";
 import {GraphqlClientProvider} from "../../api/hooks/useGraphqlClient";
+import {ProvideColorMode} from "../../context";
 import {AptosWalletAdapterProvider} from "@aptos-labs/wallet-adapter-react";
 import {NetworkName} from "@aptos-labs/wallet-adapter-core";
 import {BloctoWallet} from "@blocto/aptos-wallet-adapter-plugin";
