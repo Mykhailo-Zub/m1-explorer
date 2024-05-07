@@ -55,21 +55,21 @@ function walletsForNetwork(network: string) {
     wallets.unshift(
       new IdentityConnectWallet(IdentityConnectId, {
         networkName:
-          NetworkName.Mainnet as IdentityConnectWalletConfig["networkName"],
+          NetworkName.Mainnet as unknown as IdentityConnectWalletConfig["networkName"],
       }),
     );
   } else if (network === NetworkName.Testnet) {
     wallets.unshift(
       new IdentityConnectWallet(IdentityConnectId, {
         networkName:
-          NetworkName.Testnet as IdentityConnectWalletConfig["networkName"],
+          NetworkName.Testnet as unknown as IdentityConnectWalletConfig["networkName"],
       }),
     );
   } else if (network === NetworkName.Devnet) {
     wallets.unshift(
       new IdentityConnectWallet(IdentityConnectId, {
         networkName:
-          NetworkName.Devnet as IdentityConnectWalletConfig["networkName"],
+          NetworkName.Devnet as unknown as IdentityConnectWalletConfig["networkName"],
       }),
     );
   }
