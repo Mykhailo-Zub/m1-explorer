@@ -10,10 +10,8 @@ import {
 } from "../../global-config/GlobalConfig";
 import {ProvideColorMode} from "../../context";
 import {GraphqlClientProvider} from "../../api/hooks/useGraphqlClient";
-import {
-  AptosWalletAdapterProvider,
-  NetworkName,
-} from "@aptos-labs/wallet-adapter-react";
+import {AptosWalletAdapterProvider} from "@aptos-labs/wallet-adapter-react";
+import {NetworkName} from "@aptos-labs/wallet-adapter-core";
 import {BloctoWallet} from "@blocto/aptos-wallet-adapter-plugin";
 import {MartianWallet} from "@martianwallet/aptos-wallet-adapter";
 import {NightlyWallet} from "@nightlylabs/aptos-wallet-adapter-plugin";
